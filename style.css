@@ -82,6 +82,7 @@ body {
 
     a:HOVER {
         opacity: 0.6;
+        transition: linear 0.3s;
     }
     
     #navigation {
@@ -113,7 +114,6 @@ body {
         padding-right: 40px;
         margin: 20px;
         border: 3px #F5F4BE solid;
-        transition: linear 0.3s;
     }
 
     a.worklink:HOVER {
