@@ -81,7 +81,7 @@ body {
     }
 
     a:HOVER {
-        opacity: 0.8;
+        opacity: 0.6;
     }
     
     #navigation {
@@ -103,10 +103,6 @@ body {
         padding-bottom: 10px;
     }
 
-    a.nav:HOVER {
-        color: #3E5167;
-    }
-
     a.worklink:LINK, a.worklink:VISITED {
         font-family: "Montserrat";
         text-transform: uppercase;
@@ -123,4 +119,5 @@ body {
     a.worklink:HOVER {
         background-color: #F5F4BE;
         color: #93C6A2;
+        opacity: 1;
     }    
