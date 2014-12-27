@@ -83,6 +83,10 @@ html, body {
 .title {
 	font-size: 100pt;
 	line-height: 90pt;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 50px;
 }
 
 .header {
