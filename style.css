@@ -1,155 +1,128 @@
+/* COLORS 
+* Red: #CE513E;
+* Yellow: #E9B13D;
+* Teal: #93C6A2;
+* Blue: #3E5167;
+* Beige: #F5F4BE;
+# Dark blue: #212E3C;
+*/
 
-body {
+html, body {
     margin: 0;
     padding: 0;
+    font-size: 12pt;
 }
 
-/* containers */
+#navigation {
+	position: fixed;
+	width: 100%;
+	text-align: right;
+	padding-top: 15px;
+}
 
-    #landing, #work, #play {
-        width: 100%;
-        min-height: 100%;
-    }
+#landing, #work, #play {
+    width: 100%;
+    min-height: 100%;
+}
 
-    .container {
-        max-width: 1100px;
-        padding: 30px;
-        margin: 0 auto;
-        text-align: center;
-    }
+#landing {
+    background-color: #CE513E;
+    color: #E9B13D;
+}
 
-    #landing {
-        background-color: #CE513E;
-        color: #E9B13D;
-    }
+#work {
+    background-color: #93C6A2;
+    color: #F5F4BE;
+}
 
-    #work {
-        background-color: #93C6A2;
-        color: #F5F4BE;
-    }
+#play {
+    background-color: #E9B13D;
+    color: #3E5167;
+}
 
-    #play {
-        background-color: #E9B13D;
-        color: #3E5167;
-    }
+/* container formatting */
 
-    .name {
-        font-family: "Montserrat";
-        font-size: 100pt;
-        line-height: 90pt;
-        text-transform: uppercase;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        padding: 60px;
-    }
+.container {
+	width: 95%;
+	max-width: 960px;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.padding {
+	padding: 30px;
+}
+
+.button {
+	padding-top: 60px;
+	min-height: 70px;
+}
+
+/* image formatting */
+
+.onefifty {
+	width: 150px;
+	height: 150px;
+}
 
 /* text formatting */
 
-    .title {
-        padding-top: 100px;
-        font-family: "Montserrat";
-        font-size: 50pt;
-        text-transform: uppercase; 
-        margin: auto;
-    }
+.montserrat {
+	font-family: "Montserrat";
+	text-transform: uppercase;
+}
 
-    .subtitle, .skills, .social, .projects  {
-        font-family: "Raleway";
-        font-weight: 300;
-        font-size: 18pt;
-        padding: 20px;
-        max-width: 800px;
-        margin: auto;
-    }
+.raleway {
+	font-family: "Raleway";
+}
 
-    .projects {
-        max-width: 1100px; 
-    } 
+.title {
+	font-size: 100pt;
+	line-height: 90pt;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 50px;
+}
 
-    .subtitle {
-        border-bottom: 1px solid;
-    }
+.header {
+	font-size: 50pt;
+}
 
-    .links {
-        padding: 40px;
-        font-size: 18pt;
-    }
+.subheader {
+	font-size: 18pt;
+}
 
-/* grid formatting */
-
-    .item {
-        max-width: 400px; 
-        padding: 40px;
-        display: inline-block;
-        font-size: 12pt;
-    }
-
-    .workicon {
-        width: 150px;
-        height: 150px;
-    }
-
-    .projectheader {
-        font-family: "Montserrat";
-        text-transform: uppercase;
-        border-bottom: 1px solid;
-        padding-bottom: 10px;
-        margin: 10px;
-        margin-left: 40px;
-        margin-right: 40px;
-    }   
-
-    .projectcontent {
-        text-align: justify;
-    }
+.withborder {
+	border-bottom: 1px solid;
+	margin: 15px;
+	margin-left: 50px;
+	margin-right: 50px;
+	padding-bottom: 15px;
+}
 
 /* links */
-    
-    a:LINK, a:VISITED {
-        text-decoration: none;
-        font-weight: 700;
-        color: #3E5167;
-    }
 
-    a:HOVER {
-        opacity: 0.6;
-        transition: linear 0.3s;
-    }
-    
-    #navigation {
-        position: fixed;
-        top: 0;
-        left: 0;
-        margin-top: 20px;
-        width: 100%;
-        height: 40px;
-        text-align: right;
-    }
+a:LINK, a:VISITED {
+	text-decoration: none;
+	color: #212E3C;
+	font-weight: 700;
+	transition: linear 0.3s;
+}
 
-    a.nav:LINK, a.nav:VISITED {
-        font-family: "Montserrat";
-        text-transform: uppercase;
-        text-decoration: none;
-        color: #212E3C;
-        padding-right: 40px;   
-        padding-bottom: 10px;
-    }
+a:HOVER {
+	color: #3E5167;
+}
 
-    a.worklink:LINK, a.worklink:VISITED {
-        font-family: "Montserrat";
-        text-transform: uppercase;
-        text-decoration: none;
-        color: #F5F4BE;
-        padding: 30px;
-        padding-left:  40px;
-        padding-right: 40px;
-        margin: 20px;
-        border: 3px #F5F4BE solid;
-    }
+a.workbutton:LINK, a.workbutton:VISITED {;
+    color: #F5F4BE;
+    padding: 30px;
+    border: 3px #F5F4BE solid;
+}
 
-    a.worklink:HOVER {
-        background-color: #F5F4BE;
-        color: #93C6A2;
-        opacity: 1;
-    }    
+a.workbutton:HOVER {
+    background-color: #F5F4BE;
+    color: #93C6A2;
+}  

@@ -1,19 +1,32 @@
 <html>
     <head>
         <title>Angira Shirahatti</title>
+        <meta name="description" content="Personal website for Angira Shirahatti, Designer, Developer and UC Berkeley sophomore">
+
+        <!-- STYLESHEET -->
         <link rel = "stylesheet" type = "text/css" href = "style.css">
+
+        <!-- PURE CSS RESPONSIVE GRID SYSTEM -->
+        <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.5.0/base-min.css&pure/0.5.0/grids-min.css&pure/0.5.0/grids-responsive-old-ie-min.css">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.5.0/base-min.css&pure/0.5.0/grids-min.css&pure/0.5.0/grids-responsive-min.css">
+<!--<![endif]-->
+
         <!-- GOOGLE FONTS - MONTSERRAT & RALEWAY -->
-        <link href='http://fonts.googleapis.com/css?family=Montserrat:700|Raleway:400,300,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:700|Raleway:300,700' rel='stylesheet' type='text/css'>
+
     </head>
     <body>
-        <div id = "navigation">
-            <a class = "nav" href = "#work">Work</a>
-            <a class = "nav" href = "#play">Play</a>
-            <a class = "nav" href = "mailto:ashirahattia@gmail.com">Contact</a>
+        <div class = "montserrat" id = "navigation">
+            <a class = "padding" href = "#work">Work</a>
+            <a class = "padding" href = "#play">Play</a>
+            <a class = "padding" href = "mailto:ashirahattia@gmail.com">Contact</a>
         </div>
 
         <div id  = "landing">
-            <div class = "name">
+            <div class = "montserrat title">
                 Hi, my
                 <br>name is
                 <br>Angira
@@ -22,50 +35,82 @@
         </div>
         <div id  = "work">
             <div class = "container">
-                <div class = "title">  
+                <div class = "montserrat header">  
                     I'm a sophomore at UC Berkeley studying CS & Design
                 </div>
-                <div class = "subtitle">
+                <div class = "raleway subheader withborder">
                     I like to spend my time conquering bugs, learning new things, 
                     and pondering ways to improve the user experience of life.
                 </div>
-                <div class = "skills">
+                <div class = "raleway subheader">
                     <b>Programming</b>: Python, Java, C, HTML/CSS
                     <br><b>Design</b>: Illustrator, Photoshop, InDesign
                     <br><b>Currently Learning</b>: Javascript, JQuery
-                </div> 
-                <div class = "links">
-                    <a class = "worklink" href = "resume.pdf" target = "_blank">Resume</a>
-                    <a class = "worklink" href = "https://www.behance.net/ashirahattia" target = "_blank">Portfolio</a>
-                    <a class = "worklink" href = "https://github.com/ashirahattia" target = "_blank">Github</a>
                 </div>
-                <div class = "projects">
-                    <div class = "item">
-                        <img class = "workicon" src = "icons/work/teatime.svg">
-                        <div class = "projectheader">Tea Time</div>
-                        <div class = "projectcontent">    
-                            Distillery seitan taxidermy master cleanse Kickstarter, McSweeney's pour-over locavore Schlitz sartorial kale chips small batch yr Portland occupy. Kogi gastropub chambray tofu squid asymmetrical. Cronut roof party Neutra, slow-carb actually mustache Portland 90's Shoreditch tattooed twee. Thundercats normcore iPhone vegan bespoke four dollar toast whatever cronut tilde, drinking vinegar leggings 8-bit XOXO Schlitz vinyl. 
+                <div class = "pure-g">
+                    <div class = "pure-u-1 pure-u-md-1-3 pure-u-lg-1-3">
+                        <div class = "montserrat subheader button">
+                            <a class = "workbutton" href = "resume.pdf" target = "_blank">Resume</a>
                         </div>
                     </div>
-                    <div class = "item">
-                        <img class = "workicon" src = "icons/work/insults.svg">
-                        <div class = "projectheader">Shakespearen Insult Generator</div>
-                        <div class = "projectcontent">
-                             Distillery seitan taxidermy master cleanse Kickstarter, McSweeney's pour-over locavore Schlitz sartorial kale chips small batch yr Portland occupy. Kogi gastropub chambray tofu squid asymmetrical. Cronut roof party Neutra, slow-carb actually mustache Portland 90's Shoreditch tattooed twee. Thundercats normcore iPhone vegan bespoke four dollar toast whatever cronut tilde, drinking vinegar leggings 8-bit XOXO Schlitz vinyl. 
+                     <div class = "pure-u-1 pure-u-md-1-3 pure-u-lg-1-3">
+                        <div class = "montserrat subheader button">
+                            <a class = "workbutton" href = "http://www.behance.net/ashirahattia" target = "_blank">Portfolio</a>
                         </div>
                     </div>
-                    <div class = "item">
-                        <img class = "workicon" src = "icons/work/innod.svg">
-                        <div class = "projectheader">Innovative Design</div>
-                        <div class = "projectcontent">
-                             Distillery seitan taxidermy master cleanse Kickstarter, McSweeney's pour-over locavore Schlitz sartorial kale chips small batch yr Portland occupy. Kogi gastropub chambray tofu squid asymmetrical. Cronut roof party Neutra, slow-carb actually mustache Portland 90's Shoreditch tattooed twee. Thundercats normcore iPhone vegan bespoke four dollar toast whatever cronut tilde, drinking vinegar leggings 8-bit XOXO Schlitz vinyl. 
+                     <div class = "pure-u-1 pure-u-md-1-3 pure-u-lg-1-3">
+                            <div class = "montserrat subheader button">
+                                <a class = "workbutton" href = "http://github.com/ashirahattia" target = "_blank">Github</a>
+                            </div>
+                    </div>
+                </div>
+                <div class = "pure-g">
+                    <div class = "pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                        <div class = "padding raleway">
+                            <img class = "onefifty" src = "icons/work/teatime.svg">
+                            <div class = "montserrat withborder">Tea Time</div>   
+                            My first web dev project, everything you ever needed to know about loose leaf tea (and some fancy tea-based drinks too).
+                            <br><br>
+                            <b>Things I learned about</b>: CSS positioning, JQuery
+                            <br>
+                            <b>Tools I used</b>: HTML5/CSS3, JQuery, Flexbox Layouts
                         </div>
                     </div>
-                    <div class = "item">
-                        <img class = "workicon" src = "icons/work/bare.svg">
-                        <div class = "projectheader">Bare Magazine</div>
-                        <div class = "projectcontent">
-                             Distillery seitan taxidermy master cleanse Kickstarter, McSweeney's pour-over locavore Schlitz sartorial kale chips small batch yr Portland occupy. Kogi gastropub chambray tofu squid asymmetrical. Cronut roof party Neutra, slow-carb actually mustache Portland 90's Shoreditch tattooed twee. Thundercats normcore iPhone vegan bespoke four dollar toast whatever cronut tilde, drinking vinegar leggings 8-bit XOXO Schlitz vinyl. 
+                    <div class = "pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                        <div class = "padding raleway">
+                            <img class = "onefifty" src = "icons/work/insults.svg">
+                            <div class = "montserrat withborder">Lily-livered</div>
+                            (Coming soon!)
+                            <br>
+                            My first Javascript project -- insults worthy of Shakespeare at the click of a button. 
+                            <br><br>
+                            <b>Things I learned about</b>:
+                            <br>
+                            <b>Tools I used</b>:
+                        </div>
+                    </div>
+                </div>
+                <div class = "pure-g">
+                    <div class = "pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                        <div class = "padding raleway">
+                            <img class = "onefifty" src = "icons/work/innod.svg">
+                            <div class = "montserrat withborder">Innovative Design</div>
+                             Since spring 2014, I've been a design team leader, teaching assistant and officer at Innovative Design, Berkeley's premier graphic design and photography club.
+                             <br><br>
+                             <b>Things I learned about</b>: Branding, communication design, typography
+                             <br>
+                             <b>Tools I used</b>: Illustrator, Photoshop 
+                        </div>
+                    </div>
+                    <div class = "pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                        <div class = "padding raleway">
+                            <img class = "onefifty" src = "icons/work/bare.svg">
+                            <div class = "montserrat withborder">Bare Magazine</div>
+                             I served as a member of the layout team for the Spring 2014 and Fall 2014 issues of BARE, Berkeley's fashion and lifestyle magazine. I have also provided event marketing for the organization.
+                             <br><br>
+                             <b>Things I learned about</b>: Editorial design
+                             <br>
+                             <b>Tools I used</b>: Illustrator, InDesign
                         </div>
                     </div>
                 </div>
@@ -73,18 +118,18 @@
         </div>
         <div id  = "play">
             <div class = "container">
-                <div class = "title">
+                <div class = "montserrat header">
                     In my spare time, I like to paint, drink tea, and take apart clocks
                 </div>
-                <div class = "subtitle">
+                <div class = "raleway subheader withborder">
                     I also like cooking, reading, writing, traveling, debating politics, 
                     and eating (especially eating). Right now, I'm doing a semester abroad 
                     in London. You can check out my travel journal <a href = "#">here</a>.
                 </div>
-                <div class = "social">
+                <div class = "raleway">
                     Social media buttons go here
                 </div>
-                <div class = "projects">
+                <div class = "raleway">
                     Playtime projects go here.
                 </div>
             </div>
