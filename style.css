@@ -12,7 +12,7 @@ body {
     }
 
     .container {
-        max-width: 960px;
+        max-width: 1100px;
         padding: 30px;
         margin: 0 auto;
         text-align: center;
@@ -54,7 +54,7 @@ body {
         margin: auto;
     }
 
-    .subtitle, .skills, .social, .projects {
+    .subtitle, .skills, .social, .projects  {
         font-family: "Raleway";
         font-weight: 300;
         font-size: 18pt;
@@ -63,6 +63,10 @@ body {
         margin: auto;
     }
 
+    .projects {
+        max-width: 1100px; 
+    } 
+
     .subtitle {
         border-bottom: 1px solid;
     }
@@ -70,6 +74,34 @@ body {
     .links {
         padding: 40px;
         font-size: 18pt;
+    }
+
+/* grid formatting */
+
+    .item {
+        max-width: 400px; 
+        padding: 40px;
+        display: inline-block;
+        font-size: 12pt;
+    }
+
+    .workicon {
+        width: 150px;
+        height: 150px;
+    }
+
+    .projectheader {
+        font-family: "Montserrat";
+        text-transform: uppercase;
+        border-bottom: 1px solid;
+        padding-bottom: 10px;
+        margin: 10px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }   
+
+    .projectcontent {
+        text-align: justify;
     }
 
 /* links */
