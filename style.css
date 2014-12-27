@@ -74,6 +74,7 @@ html, body {
 .montserrat {
 	font-family: "Montserrat";
 	text-transform: uppercase;
+	font-weight: 700;
 }
 
 .raleway {
