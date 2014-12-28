@@ -19,22 +19,28 @@
         <!-- GOOGLE FONTS - MONTSERRAT & RALEWAY -->
         <link href='http://fonts.googleapis.com/css?family=Montserrat:700|Raleway:300,700' rel='stylesheet' type='text/css'>
 
-    </head>
-    <body>
-        <div class = "montserrat" id = "navigation">
-            <a class = "padding" href = "#work">Work</a>
-            <a class = "padding" href = "#play">Play</a>
-            <a class = "padding" href = "mailto:ashirahattia@gmail.com">Contact</a>
-        </div>
+         <!-- JQUERY -->
+         <script src="js/jquery-1.11.2.min.js"></script>
+         <script src="js/jquery.waypoints.min.js"></script>
+         <script src="js/script.js"></script>
 
-        <div id  = "landing">
-            <div class = "montserrat title">
+     </head>
+     <body>
+         <div class = "montserrat" id = "navigation">
+             <a class = "padding" href = "#work">Work</a>
+             <a class = "padding" href = "#play">Play</a>
+             <a class = "padding" href = "mailto:ashirahattia@gmail.com">Contact</a>
+         </div>
+
+         <div id  = "landing">
+            <div class = "montserrat title" id = "intro">
                 Hi, my
-                <br>name is
-                <br>Angira
-                <br>Shirahatti
-            </div> 
-        </div>
+                <br> name is
+                <br> Angira
+                <br> Shirahatti
+            </div>
+            <div id = "landingwaypoint"></div>
+         </div>
         <div id  = "work">
             <div class = "container">
                 <div class = "montserrat header">  
@@ -125,6 +131,7 @@
                     </div>
                 </div>
             </div>
+            <div id = "workwaypoint"></div>
         </div>
         <div id  = "play">
             <div class = "container">
