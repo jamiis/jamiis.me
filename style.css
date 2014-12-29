@@ -51,6 +51,7 @@ html, body {
     display: none;
     position: absolute;
     bottom: 50px;
+    width: 100%;
 }
 
 #landingwaypoint, #workwaypoint, #playwaypoint {
@@ -112,8 +113,7 @@ html, body {
 }
 
 .title {
-	font-size: 100pt;
-	line-height: 90pt;
+  line-height: 94%;
 }
 
 .header {
@@ -179,11 +179,6 @@ a.workbutton:HOVER {
   		font-size: 14pt;
   	}
 
-  	.title {
-  		font-size: 60pt;
-  		line-height: 60pt;
-  	}
-
     .padding {
       padding: 10px;
     }
@@ -200,11 +195,6 @@ a.workbutton:HOVER {
 
     a.workbutton:HOVER {
       color: #93C6A2;
-    }
-
-    .title {
-      font-size: 30pt;
-      line-height: 30pt;
     }
 
     #intro {

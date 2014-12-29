@@ -2,6 +2,8 @@ $(document).ready(function(){
 
     $('#intro').animate({left: 50, opacity: 'show'}, 1500);
 
+    $('.title').fitText(1, { minFontSize: '50px' });
+
     $('#navigation').delay(1500).fadeIn(1000);
 
     $('#landing').waypoint(function(direction) {
@@ -25,7 +27,7 @@ $(document).ready(function(){
      $('#landingwaypoint').waypoint(function(direction) {
           $('#navigation').css({
             'background-color': '#CE513E',
-            'transition': 'linear 0.3s'
+            'transition': 'linear 0.2s'
           });
     });
 
