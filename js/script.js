@@ -36,4 +36,14 @@ $(document).ready(function(){
             'background-color': '#93C6A2'
           });
     });
+
+    $('#m').click(function(){
+      $('#menu').fadeIn(500);
+    });
+
+    $('#menu').click(function() {
+      if($('#menu').is(':visible')) {
+          $('#menu').fadeOut(500);
+      }
+    });
 });
