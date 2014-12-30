@@ -6,7 +6,7 @@
         <meta name = "viewport" content = "width = device-width, initial-scale = 1">
 
         <!-- STYLESHEET -->
-        <link rel = "stylesheet" type = "text/css" href = "style.css">
+        <link rel = "stylesheet" type = "text/css" href = "css/style.css">
 
         <!-- PURE CSS RESPONSIVE GRID SYSTEM -->
         <!--[if lte IE 8]>
@@ -29,9 +29,9 @@
      </head>
      <body>
          <div class = "montserrat" id = "navigation">
-             <a class = "padding" href = "#work">Work</a>
-             <a class = "padding" href = "#play">Play</a>
-             <a class = "padding" href = "mailto:ashirahattia@gmail.com">Contact</a>
+             <span class = "padding"> <a class = "border" href = "#work">Work</a> </span>
+             <span class = "padding"> <a class = "border" href = "#play">Play</a> </span>
+             <span class = "padding"> <a  class = "border" href = "mailto:ashirahattia@gmail.com">Contact</a> 
          </div>
 
          <div id  = "landing">
@@ -77,10 +77,11 @@
                 <div class = "pure-g">
                     <div class = "pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
                         <div class = "padding raleway">
-                             <a href = "#">
+                             <a class = "worklink" href = "#">
                                 <img class = "onefifty" src = "icons/work/teatime.svg">
+                                <div class = "montserrat withborder">Tea Time &#8594;</div>
                             </a>
-                            <div class = "montserrat withborder">Tea Time</div>   
+
                             My first web dev project, everything you ever needed to know about loose leaf tea (and some fancy tea-based drinks too).
                             <br><br>
                             <b>Things I learned about</b>: CSS positioning, JQuery
@@ -90,10 +91,11 @@
                     </div>
                     <div class = "pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
                         <div class = "padding raleway">
-                             <a href = "#">
+                             <a class = "worklink" href = "#">
                                 <img class = "onefifty" src = "icons/work/insults.svg">
+                                <div class = "montserrat withborder">Lily-livered &#8594;</div>
                             </a>
-                            <div class = "montserrat withborder">Lily-livered</div>
+
                             (Coming soon!)
                             <br>
                             My first Javascript project -- insults worthy of Shakespeare at the click of a button. 
@@ -107,10 +109,11 @@
                 <div class = "pure-g">
                     <div class = "pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
                         <div class = "padding raleway">
-                            <a href = "#">
+                            <a class = "worklink" href = "#">
                                 <img class = "onefifty" src = "icons/work/innod.svg">
+                                <div class = "montserrat withborder">Innovative Design &#8594;</div>
                             </a>
-                            <div class = "montserrat withborder">Innovative Design</div>
+
                              Since spring 2014, I've been a design team leader, teaching assistant and officer at Innovative Design, Berkeley's premier graphic design and photography club.
                              <br><br>
                              <b>Things I learned about</b>: Branding, communication design, typography
@@ -120,10 +123,11 @@
                     </div>
                     <div class = "pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
                         <div class = "padding raleway">
-                             <a href = "#">
+                             <a class = "worklink" href = "#">
                                 <img class = "onefifty" src = "icons/work/bare.svg">
+                                <div class = "montserrat withborder">Bare Magazine &#8594;</div>
                             </a>
-                            <div class = "montserrat withborder">Bare Magazine</div>
+
                              I served as a member of the layout team for the Spring 2014 and Fall 2014 issues of BARE, Berkeley's fashion and lifestyle magazine. I have also provided event marketing for the organization.
                              <br><br>
                              <b>Things I learned about</b>: Editorial design
@@ -143,7 +147,7 @@
                 <div class = "raleway subheader withborder">
                     I also like cooking, reading, writing, traveling, debating politics, 
                     and eating (especially eating). Right now, I'm doing a semester abroad 
-                    in London. You can check out my travel journal <a href = "#">here</a>.
+                    in London. You can check out my travel journal <a  class = "border" href = "#">here</a>.
                 </div>
                 <div class = "pure-g narrow">
                     <div class = "pure-u-1-5">
@@ -182,24 +186,28 @@
                         </div>
                     </div>
                 </div>
+                <!--END SOCIAL MEDIA -->
+
                 <div class = "pure-g">
                     <div class = "pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
                         <div class = "padding raleway">
-                             <a href = "#">
+                             <a class = "playlink" href = "#">
                                 <img class = "onefifty" src = "icons/play/gear.svg">
-                            </a>
-                            <div class = "montserrat withborder">Sculptures</div>   
-                            I wasn't kidding about taking apart clocks. I also like to put them back together in new ways. If you'd like to commission a clock sculpture, shoot me an <a href = "mailto:ashirahattia@gmail.com" target = "_blank">email</a>.
+                                <div class = "montserrat withborder">Sculptures &#8594;</div> 
+                            </a>  
+
+                            I wasn't kidding about taking apart clocks. I also like to put them back together in new ways. If you'd like to commission a clock sculpture, shoot me an <a  class = "border" href = "mailto:ashirahattia@gmail.com" target = "_blank">email</a>.
                             <br><br>
                             <b>Materials</b>: Metal, screwdrivers, superglue
                         </div>
                     </div>
                     <div class = "pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
                         <div class = "padding raleway">
-                             <a href = "#">
+                             <a class = "playlink" href = "#">
                                 <img class = "onefifty" src = "icons/play/art.svg">
+                                <div class = "montserrat withborder">Digital Illustration &#8594;</div>
                             </a>
-                            <div class = "montserrat withborder">Digital Illustration</div>
+
                             I've been drawing and painting since I was little. These days, I like to work in digital media. 
                             <br><br>
                             <b>Materials</b>: Intuos Pro Tablet, Photoshop
@@ -209,10 +217,11 @@
                 <div class = "pure-g">
                     <div class = "pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
                         <div class = "padding raleway">
-                             <a href = "#">
+                             <a class = "playlink" href = "sketchbook.html">
                                 <img class = "onefifty" src = "icons/play/sketch.svg">
+                                <div class = "montserrat withborder">Sketchbook &#8594;</div>
                             </a>
-                            <div class = "montserrat withborder">Sketchbook</div>   
+   
                             Sometimes though, I still go for the good old fashioned pencil and paper. I take my moleskine everywhere.
                             <br><br>
                             <b>Materials</b>: Graphite, Charcoal, Ink, Watercolor, Acrylic

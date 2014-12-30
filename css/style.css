@@ -148,16 +148,18 @@ a:LINK, a:VISITED {
 	text-decoration: none;
 	color: #212E3C;
 	font-weight: 700;
-	transition: linear 0.3s;
 }
 
 a:HOVER {
-	color: #3E5167;
+  opacity: 0.8;
+  transition: linear 0.3s;;
+  border: none;
 }
 
-a img:HOVER {
-	opacity: 0.8;
-	transition: linear 0.3s;
+a.border:HOVER {
+  opacity: 1;
+  transition: none;
+  border-bottom: 2px solid;
 }
 
 a.workbutton:LINK, a.workbutton:VISITED {;
@@ -167,9 +169,20 @@ a.workbutton:LINK, a.workbutton:VISITED {;
 }
 
 a.workbutton:HOVER {
+    opacity: 1;
     background-color: #F5F4BE;
     color: #93C6A2;
 }
+
+a.worklink:LINK, a.worklink:VISITED, a.worklink:HOVER {
+  color: #F5F4BE;
+}
+
+a.playlink:LINK, a.playlink:VISITED, a.playlink:HOVER {
+  color: #3E5167;
+}
+
+
 
 /* Media queries for responsive design */
 

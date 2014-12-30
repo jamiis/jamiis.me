@@ -1,0 +1,26 @@
+body, html {
+	background-color: #FDFDFD;
+	color: #212E3C;
+}
+
+#grid {
+	margin: auto;
+	text-align: center;
+}
+
+.item {
+	max-width: 300px;
+	margin-bottom: 10px;
+}
+
+img {
+	width: 100%;
+}
+
+#navigation {
+	background-color: #FDFDFD;
+}
+
+:focus {
+	outline: 0;
+}
