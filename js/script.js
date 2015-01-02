@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
-    $('#intro').animate({left: 50, opacity: 'show'}, 1500);
+    $('#intro').animate({'padding-left': '50px', opacity: 'show'}, 1500);
 
-    $('.title').fitText(1, { minFontSize: '50px' });
+    $('.title').fitText(1, { minFontSize: '40px' });
 
     $('#navigation').delay(1500).fadeIn(1000);
 
@@ -37,13 +37,4 @@ $(document).ready(function(){
           });
     });
 
-    $('#m').click(function(){
-      $('#menu').fadeIn(500);
-    });
-
-    $('#menu').click(function() {
-      if($('#menu').is(':visible')) {
-          $('#menu').fadeOut(500);
-      }
-    });
 });

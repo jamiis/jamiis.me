@@ -23,6 +23,7 @@
          <script src="js/jquery-1.11.2.min.js"></script>
          <script src="js/jquery.waypoints.min.js"></script>
          <script src="js/jquery.fittext.js"></script>
+         <script src = "js/menu.js"></script>
          <script src="js/script.js"></script>
 
      </head>
@@ -30,23 +31,23 @@
         <div class = "montserrat" id = "menu">
             <div class = "container">
                 <a class = "m border" href = "index.html#work">work:</a>
-                <br><a class = "border" href = "#">tea time</a>
+                <br><a class = "border" href = "teatime">tea time</a>
                 <br><a class = "border" href = "#">lily-livered</a>
-                <br><a class = "border" href = "#">innovative design</a>
-                <br><a class = "border" href = "#">bare</a>
+                <br><a class = "border" href = "http://innovativedesign.club" target = "_blank">innovative design</a>
+                <br><a class = "border" href = "http://www.baremagazine.org" target = "_blank">bare</a>
                 <br><br>
                 <a class = "border" href = "index.html#play">play:</a>
-                <br><a class = "border" href = "index.html#work">sculptures</a>
-                <br><a class = "border" href = "#">sketchbook</a>
-                <br><a class = "border" href = "#">travel journal</a>
+                <br><a class = "border" href = "sculptures">sculptures</a>
+                <br><a class = "border" href = "sketchbook">sketchbook</a>
+                <br><a class = "border" href = "http://angiragoesplaces.tumblr.com">travel journal</a>
             </div>
         </div>
 
          <div class = "montserrat" id = "navigation">
             <span class = "padding"> <a class = "border" href = "#work">Work</a> </span>
             <span class = "padding"> <a class = "border" href = "#play">Play</a> </span>
-            <span class = "padding"> <a  class = "border" href = "mailto:ashirahattia@gmail.com">Contact</a> 
-            <span class = "padding"> <a  class = "border" id = "m" href = "#menu">Menu</a> 
+            <span class = "padding"> <a  class = "border" href = "mailto:ashirahattia@gmail.com">Contact</a> </span>
+            <span class = "padding"> <a  class = "border" id = "m" href = "#menu">Menu</a> </span>
 
          </div>
 
@@ -93,25 +94,26 @@
                 <div class = "pure-g">
                     <div class = "pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
                         <div class = "padding raleway">
-                             <a class = "worklink" href = "#">
+                             <a class = "worklink" href = "teatime">
                                 <img class = "onefifty" src = "icons/work/teatime.svg">
-                                <div class = "montserrat withborder">Tea Time &#8594;</div>
                             </a>
+                            <div class = "montserrat withborder">
+                                <a class = "worklink" href = "teatime">Tea Time &#8594;</a>
+                            </div>
 
                             My first web dev project, everything you ever needed to know about loose leaf tea (and some fancy tea-based drinks too).
                             <br><br>
-                            <b>Things I learned about</b>: CSS positioning, JQuery
+                            <b>Things I learned about</b>: CSS positioning, JQuery, Responsive Design, the horrors of vertical centering.
                             <br>
-                            <b>Tools I used</b>: HTML5/CSS3, JQuery, Flexbox Layouts
+                            <b>Tools I used</b>: HTML5/CSS3, JQuery, the Chrome Inspector
                         </div>
                     </div>
                     <div class = "pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
                         <div class = "padding raleway">
-                             <a class = "worklink" href = "#">
+                             <!--LINK-->
                                 <img class = "onefifty" src = "icons/work/insults.svg">
+                            <!--LINK-->
                                 <div class = "montserrat withborder">Lily-livered &#8594;</div>
-                            </a>
-
                             (Coming soon!)
                             <br>
                             My first Javascript project -- insults worthy of Shakespeare at the click of a button. 
@@ -125,10 +127,12 @@
                 <div class = "pure-g">
                     <div class = "pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
                         <div class = "padding raleway">
-                            <a class = "worklink" href = "#">
+                            <a class = "worklink" href ="http://innovativedesign.club" target = "_blank">
                                 <img class = "onefifty" src = "icons/work/innod.svg">
-                                <div class = "montserrat withborder">Innovative Design &#8594;</div>
                             </a>
+                            <div class = "montserrat withborder">
+                                <a class = "worklink" href ="http://innovativedesign.club" target = "_blank">Innovative Design &#8594;</a>
+                            </div>
 
                              Since spring 2014, I've been a design team leader, teaching assistant and officer at Innovative Design, Berkeley's premier graphic design and photography club.
                              <br><br>
@@ -139,10 +143,13 @@
                     </div>
                     <div class = "pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
                         <div class = "padding raleway">
-                             <a class = "worklink" href = "#">
+                             <a class = "worklink" href = "http://www.baremagazine.org" target = "_blank">
                                 <img class = "onefifty" src = "icons/work/bare.svg">
-                                <div class = "montserrat withborder">Bare Magazine &#8594;</div>
                             </a>
+                            <div class = "montserrat withborder">
+                                <a class = "worklink" href = "http://www.baremagazine.org" target = "_blank">Bare Magazine &#8594;
+                                </a>
+                            </div>
 
                              I served as a member of the layout team for the Spring 2014 and Fall 2014 issues of BARE, Berkeley's fashion and lifestyle magazine. I have also provided event marketing for the organization.
                              <br><br>
@@ -166,6 +173,8 @@
                     <b>Currently reading</b>: <i>The Color Master</i> by Aimee Bender
                     <br><b>Currently watching</b>: <i>The Blacklist</i>, season 1
                 </div>
+
+                <!-- SOCIAL MEDIA -->
                 <div class = "pure-g narrow">
                     <div class = "pure-u-1-5">
                         <div class = "halfpadding">
@@ -208,10 +217,12 @@
                 <div class = "pure-g">
                     <div class = "pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
                         <div class = "padding raleway">
-                             <a class = "playlink" href = "#">
+                             <a class = "playlink" href = "sculptures">
                                 <img class = "onefifty" src = "icons/play/gear.svg">
-                                <div class = "montserrat withborder">Sculptures &#8594;</div> 
-                            </a>  
+                            </a>
+                            <div class = "montserrat withborder">
+                                <a class = "playlink" href = "sculptures">Sculptures &#8594;</a>
+                            </div>  
 
                             I wasn't kidding about taking apart clocks. I also like to put them back together in new ways. If you'd like to commission a clock sculpture, shoot me an <a  class = "border" href = "mailto:ashirahattia@gmail.com" target = "_blank">email</a>.
                             <br><br>
@@ -220,10 +231,12 @@
                     </div>
                     <div class = "pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
                         <div class = "padding raleway">
-                             <a class = "playlink" href = "sketchbook.html">
+                            <a class = "playlink" href = "sketchbook">
                                 <img class = "onefifty" src = "icons/play/art.svg">
-                                <div class = "montserrat withborder">Sketchbook &#8594;</div>
                             </a>
+                            <div class = "montserrat withborder">
+                                <a class = "playlink" href = "sketchbook">Sketchbook &#8594;</a>
+                            </div>
 
                             I've been drawing and painting since I was little. I work in both traditional and digital media, and I take my moleskine everywhere with me.
                             <br><br>
@@ -234,10 +247,12 @@
                 <div class = "pure-g">
                     <div class = "pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
                         <div class = "padding raleway">
-                             <a class = "playlink" href = "sketchbook.html">
+                             <a class = "playlink" href = "http://angiragoesplaces.tumblr.com" target = "_blank">
                                 <img class = "onefifty" src = "icons/play/pencil.svg">
-                                <div class = "montserrat withborder">Travel Journal &#8594;</div>
                             </a>
+                            <div class = "montserrat withborder">  
+                                <a class = "playlink" href = "http://angiragoesplaces.tumblr.com" target = "_blank">Travel Journal &#8594;</a>
+                            </div>
    
                             Right now, I'm doing a semester abroad at Westminster University in London. You can check out my travel journal to read more about my adventures across the pond!
                         </div>
@@ -246,7 +261,7 @@
                 <footer>
                     (C) Angira Shirahatti, 2014
                     <br>Plugins used: FitText, Waypoint, Masonry, Magnific Popup and the Pure CSS grid
-                    <br>All icons made by hand. Download the icon pack <a href = "#"> here</a>
+                    <br>All icons made by hand. Download the icon pack <a href = "https://github.com/ashirahattia/website/tree/master/icons"> here</a>
                     <br><br>
                     Found a bug? <a href = "mailto:ashirahattia@gmail.com">Call the exterminator</a>
                 </footer>
