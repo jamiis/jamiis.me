@@ -1,0 +1,19 @@
+{
+  "name": "jamiis.me",
+  "version": "1.0.0",
+  "description": "my website",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/jamiis/jamiis.me"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamiis/jamiis.me/issues"
+  },
+  "homepage": "https://github.com/jamiis/jamiis.me"
+}
