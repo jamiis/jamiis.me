@@ -12,8 +12,7 @@ config = require("./env")
 module.exports = (app) ->
   env = app.get("env")
   app.set "views", config.root + "/server/views"
-  # TODO convert html.index to jade template
-  # app.set "view engine", "jade"
+  app.set "view engine", "jade"
   app.use express.static(path.join(config.root, "client"))
   app.set "appPath", config.root + "/client"
 
