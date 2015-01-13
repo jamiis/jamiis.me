@@ -1,4 +1,8 @@
-$(document).ready ->
+domready = require "domready"
+
+domready ->
+  $ = require "jquery"
+
   $("#m").click ->
     $("#menu").fadeIn 500
     return

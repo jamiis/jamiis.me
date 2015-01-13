@@ -1,8 +1,10 @@
 *.html
 *.js
 *.css
+todo
 data/*
 node_modules
+bower_components
 *.env
 *.swp
 

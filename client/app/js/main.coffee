@@ -1,4 +1,10 @@
-$(document).ready ->
+domready = require "domready"
+require "./menu"
+
+domready ->
+  $ = require "jquery"
+  require "jquery-waypoints"
+  require "jquery-fittext"
   
   #TODO de-duplicate. get these vars directly from less file.
   dark = "#2C3E50"
@@ -22,7 +28,6 @@ $(document).ready ->
   $("#navigation").delay(1500).fadeIn 1000
 
   $("#work").waypoint (direction) ->
-    console.log "#work ", direction
     if direction is "down"
       navCSS blue, null
     else navCSS dark, null  if direction is "up"
@@ -30,7 +35,6 @@ $(document).ready ->
   , offset: "30"
 
   $("#play").waypoint (direction) ->
-    console.log "#play ", direction
     if direction is "down"
       navCSS red, null
     else navCSS blue, null  if direction is "up"
