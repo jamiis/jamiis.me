@@ -1,5 +1,6 @@
 *.html
 *.js
+*.css
 data/*
 node_modules
 *.env
