@@ -16,10 +16,12 @@ html, body {
 }
 
 #navigation {
-	position: fixed;
-	width: 100%;
-	text-align: right;
-	padding-top: 15px;
+  background-color: #2C3E50;
+  color: white;
+  position: fixed;
+  width: 100%;
+  text-align: right;
+  padding-top: 15px;
   padding-bottom: 15px;
   display: none;
   z-index: 98;
@@ -31,20 +33,20 @@ html, body {
 }
 
 #landing {
-    background-color: #CE513E;
-    color: #E9B13D;
+    background-color: #2C3E50;
+    color: white;
     height: 100%;
     overflow: none;
 }
 
 #work {
-    background-color: #93C6A2;
-    color: #F5F4BE;
+    background-color: #6DBCDB;
+    color: white;
 }
 
 #play {
-    background-color: #E9B13D;
-    color: #3E5167;
+    background-color: #FC4349;
+    color: #2C3E50;
 }
 
 /* menu */
@@ -70,7 +72,6 @@ html, body {
     position: absolute;
     bottom: 50px;
     width: 90%;
-    background-color: #CE513E;
 }
 
 #landingwaypoint, #workwaypoint, #playwaypoint {
@@ -164,9 +165,9 @@ footer {
 /* links */
 
 a:LINK, a:VISITED {
-	text-decoration: none;
-	color: #212E3C;
-	font-weight: 700;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
 }
 
 a:HOVER {
