@@ -7,7 +7,8 @@
     "test": "test",
     "dev": "NODE_ENV=dev node server/app.js",
     "debug": "NODE_ENV=dev node debug server/app.js",
-    "build": "BROWSERIFYSHIM_DIAGNOSTICS=1 browserify -d client/app/js/main.coffee -o client/app/js/bundle.js"
+    "build": "BROWSERIFYSHIM_DIAGNOSTICS=1 browserify --debug client/app/js/main.coffee --output client/app/js/bundle.js",
+    "watch": "watchify client/app/js/main.coffee -o client/app/js/bundle.js --debug --verbose"
   },
   "browser": {
     "jquery": "./node_modules/jquery/dist/jquery.min.js",
@@ -61,6 +62,7 @@
     "jquery": "^2.1.3",
     "lodash": "^2.4.1",
     "node-env-file": "^0.1.4",
-    "serve-favicon": "^2.2.0"
+    "serve-favicon": "^2.2.0",
+    "watchify": "^2.2.1"
   }
 }
