@@ -6,29 +6,31 @@ Main application routes
 
 errors = require "./components/errors"
 express = require "express"
-bodyParser = require "body-parser"
+# bodyParser = require "body-parser"
 
 module.exports = (app) ->
   config = app.get "config"
   clientPath = app.get "appPath"
 
-  staticPath = (relPath) ->
+  staticPath = (dir) ->
     client = app.get "appPath"
-    express.static client + relPath
+    express.static client + '/app' + dir
 
   # config middleware
-  app.use bodyParser.json()
+  # app.use bodyParser.json()
 
   # partials
   # app.get "/partials/:name", (req, res) ->
   #  res.render app.get("appPath") + "/app/partials/" + req.params.name
   
   # styles
-  app.use "/css",   staticPath "/app/css/"
-  app.use "/fonts", staticPath "/app/fonts/"
-  app.use "/js",    staticPath "/app/js/"
-  app.use "/img",   staticPath "/app/img/"
-  app.use "/icons", staticPath "/app/icons/"
+  # TODO remove css
+  app.use "/css",   staticPath "/css"
+  app.use "/styles",staticPath "/styles"
+  app.use "/fonts", staticPath "/fonts"
+  app.use "/js",    staticPath "/js"
+  app.use "/img",   staticPath "/img"
+  app.use "/icons", staticPath "/icons"
 
   # all undefined asset or api routes should return a 404
   app.route("/:url(api|auth|components|app|bower_components|assets)/*").get errors[404]

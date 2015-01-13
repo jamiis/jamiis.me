@@ -1,9 +1,10 @@
 $(document).ready(function(){
 
+    //TODO de-duplicate. get these vars directly from less file.
     var dark = '#2C3E50';
     var blue = '#6DBCDB';
     var red  = '#FC4349';
-    var light = 'white';
+    var light = '#FFFFFF';
 
     var navCSS = function(bg, font) {
         css = { 'transition': 'linear 0.2s' }

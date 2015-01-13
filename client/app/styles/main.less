@@ -1,0 +1,252 @@
+@dark  : #2C3E50;
+@blue  : #6DBCDB;
+@red   : #FC4349;
+@light : #FFFFFF;
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 12pt;
+    width: 100%;
+    height: 100%;
+}
+
+#navigation {
+    background-color: @dark;
+    color: @light;
+    position: fixed;
+    width: 100%;
+    text-align: right;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: none;
+    z-index: 98;
+}
+
+#landing, #work, #play {
+    width: 100%;
+    min-height: 100%;
+}
+
+#landing {
+    background-color: @dark;
+    color: @light;
+    height: 100%;
+    overflow: none;
+}
+
+#work {
+    background-color: @blue;
+    color: @light;
+}
+
+#play {
+    background-color: @red;
+    color: @dark;
+}
+
+/* menu */
+
+#menu {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #3E5167;
+    font-size: 20pt;
+    line-height: 30pt;
+    z-index: 99;
+    display: none;
+}
+
+
+/* for JQuery effects */
+
+#intro {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    width: 90%;
+}
+
+#landingwaypoint, #workwaypoint, #playwaypoint {
+    width: 100%;
+    height: 40px;
+}
+
+#landingwaypoint {
+    position: absolute;
+    bottom: 0;
+}
+
+/* container formatting */
+
+.container {
+    width: 95%;
+    max-width: 960px;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.narrow {
+    max-width: 500px;
+    margin: auto;
+}
+
+.padding {
+    padding: 30px;
+}
+
+.halfpadding {
+    padding: 15px;
+}
+
+.button {
+    padding-top: 60px;
+    min-height: 70px;
+}
+
+/* image formatting */
+
+.onefifty {
+    width: 150px;
+    height: 150px;
+}
+
+/* text formatting */
+
+.montserrat {
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.raleway {
+    font-family: "Raleway";
+}
+
+.title {
+    line-height: 94%;
+}
+
+.header {
+    font-size: 50pt;
+}
+
+.subheader {
+    font-size: 18pt;
+}
+
+.withborder {
+    border-bottom: 1px solid;
+    margin: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 15px;
+}
+
+footer {
+    font-family: "Raleway";
+    font-size: 9pt;
+    margin: 80px;
+    margin-bottom: 0px;
+    padding: 30px;
+    border-top: 1px solid;
+    height: 50px;
+}
+
+/* links */
+
+a:LINK, a:VISITED {
+    text-decoration: none;
+    color: @light;
+    font-weight: 700;
+}
+
+a:HOVER {
+    opacity: 0.8;
+    transition: linear 0.3s;;
+    border: none;
+}
+
+a.border:HOVER {
+    opacity: 1;
+    transition: none;
+    border-bottom: 2px solid;
+}
+
+a.workbutton:LINK, a.workbutton:VISITED {
+    color: #F5F4BE;
+    padding: 30px;
+    border: 3px #F5F4BE solid;
+}
+
+a.workbutton:HOVER {
+    opacity: 1;
+    background-color: #F5F4BE;
+    color: #93C6A2;
+}
+
+a.worklink:LINK, a.worklink:VISITED {
+    color: #F5F4BE;
+}
+
+a.playlink:LINK, a.playlink:VISITED {
+    color: #3E5167;
+}
+
+/* Media queries for responsive design */
+
+@media (max-width: 800px) {
+    a.workbutton:LINK, a.workbutton:VISITED {
+        color: #F5F4BE;
+        padding: 20px;
+        border: 3px #F5F4BE solid;
+        font-size: 12pt;
+    }
+
+    .header {
+        font-size: 30pt;
+    }
+
+    .subheader {
+        font-size: 14pt;
+    }
+
+    .padding {
+        padding: 10px;
+    }
+} 
+
+@media (max-width: 600px) {
+    a.workbutton:LINK, a.workbutton:VISITED {
+        color: #F5F4BE;
+        padding: 12px;
+        border: 2px #F5F4BE solid;
+        font-size: 8pt;
+    }
+
+    a.workbutton:HOVER {
+      color: #93C6A2;
+    }
+
+    #intro {
+      padding-bottom: 20px;
+    }
+
+    .header {
+      font-size: 24pt;
+    }
+
+    .container {
+      padding-top: 50px;
+    }
+
+    #navigation {
+      text-align: center;
+    }
+} 
+
