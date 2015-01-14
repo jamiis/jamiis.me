@@ -6,6 +6,8 @@ html
 
     // STYLESHEET
     link(rel='stylesheet', type='text/css', href='styles/main.css')
+    // FONT AWESOME
+    link(href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet")
     // PURE CSS RESPONSIVE GRID SYSTEM
     //if lte IE 8
     link(rel='stylesheet', href='http://yui.yahooapis.com/combo?pure/0.5.0/base-min.css&pure/0.5.0/grids-min.css&pure/0.5.0/grids-responsive-old-ie-min.css')
@@ -19,35 +21,13 @@ html
     // BROWSERIFIED JAVASCRIPT
     script(src='js/bundle.js')
   body
-    #menu.montserrat
-      .container
-        a.m.border(href='index.html#work') work:
-        br
-        a.border(href='teatime') tea time
-        br
-        a.border(href='#') lily-livered
-        br
-        a.border(href='http://innovativedesign.club', target='_blank') innovative design
-        br
-        a.border(href='http://www.baremagazine.org', target='_blank') bare
-        br
-        br
-        a.border(href='index.html#play') play:
-        br
-        a.border(href='sculptures') sculptures
-        br
-        a.border(href='sketchbook') sketchbook
-        br
-        a.border(href='http://angiragoesplaces.tumblr.com') travel journal
     #navigation.montserrat
       span.padding
-        a.border(href='#work') Work
+        a.work-nav.border(type="button") Work
       span.padding
-        a.border(href='#play') Play
+        a.play-nav.border(type="button") Personal
       span.padding
-        a.border(href='mailto:ashirahattia@gmail.com') Contact
-      span.padding
-        a#m.border(href='#menu') Menu
+        a.border(href='mailto:jamismanwaring@gmail.com') Contact
     #landing
       #intro.montserrat.title
         | Hi, my 
@@ -57,176 +37,110 @@ html
         | Jamis
         br
         | Johnson
-      #landingwaypoint
     #work
       .container
         .montserrat.header
-          | I'm a masters student at Columbia studying CS & Machine Learning
+          | I'm a student at Columbia studying machine learning
         .raleway.subheader.withborder
-          | I like to conquer bugs, learn new things,
-          | and ponder ways to improve the user experience of life. I also like the occasional history class.
+          | Alongside teaching machines, I'm partial to distributed systems, 
+          | functional programming, and the history of math and computation.
         .raleway.subheader
           b Programming
-          | : Python, Java, C, HTML/CSS
+          | : Python, Haskell, JavaScript, OCaml
           br
-          b Design
-          | : Illustrator, Photoshop, InDesign
+          b Tooling / Environment
+          | : Vim, Unix, Git, AWS
           br
           b Currently Learning
-          | : Javascript, JQuery
+          | : Scala
         .pure-g
           .pure-u-1-3
             .montserrat.subheader.button
-              a.workbutton(href='resume.pdf', target='_blank') Resume
+              a.workbutton(href='http://github.com/jamiis', target='_blank') Github
           .pure-u-1-3
             .montserrat.subheader.button
-              a.workbutton(href='http://www.behance.net/ashirahattia', target='_blank') Portfolio
+              a.workbutton(href='mailto:jamismanwaring@gmail.com', target='_blank') Contact
           .pure-u-1-3
             .montserrat.subheader.button
-              a.workbutton(href='http://github.com/ashirahattia', target='_blank') Github
+              a.workbutton(href='https://github.com/jamiis/resume/blob/master/README.md', target='_blank') Resume
         .pure-g
           .pure-u-1.pure-u-md-1-2.pure-u-lg-1-2
             .padding.raleway
-              a.worklink(href='teatime')
-                img.onefifty(src='icons/work/teatime.svg')
+              a.icon(href='https://github.com/quarklang/QUARK' target='_blank')
+                i.fa.fa-code.fa-5x.light
               .montserrat.withborder
-                a.worklink(href='teatime') Tea Time &rarr;
-              |                             My first web dev project, everything you ever needed to know about loose leaf tea (and some fancy tea-based drinks too).
+                | QUARK 
+                br
+                a(href='https://github.com/quarklang/QUARK' target='_blank') Code 
+                | | 
+                a(href='http://slides.com/quarklang/quark/' target='_blank') Slides
+              | A language and compiler implemented in 
+              | OCaml to build quantum circuits. 
               br
               br
-              b Things I learned about
-              | : CSS positioning, JQuery, Responsive Design, the horrors of vertical centering.
+              b Learned
+              | : OCaml, patience with my team, compiler design
               br
-              b Tools I used
-              | : HTML5/CSS3, JQuery, the Chrome Inspector
+              b Tools
+              | : ocamlyacc, ocamllex, C++, Shell scripting, Vagrant
           .pure-u-1.pure-u-md-1-2.pure-u-lg-1-2
             .padding.raleway
-              // LINK
-              img.onefifty(src='icons/work/insults.svg')
-              // LINK
-              .montserrat.withborder Lily-livered &rarr;
-              |                             (Coming soon!)
-              br
-              |                             My first Javascript project -- insults worthy of Shakespeare at the click of a button. 
-              br
-              br
-              b Things I learned about
-              | :
-              br
-              b Tools I used
-              | :
-        .pure-g
-          .pure-u-1.pure-u-md-1-2.pure-u-lg-1-2
-            .padding.raleway
-              a.worklink(href='http://innovativedesign.club', target='_blank')
-                img.onefifty(src='icons/work/innod.svg')
+              a.icon(href='submodules/intro-to-ocaml' target="_blank")
+                i.fa.fa-area-chart.fa-5x.light
               .montserrat.withborder
-                a.worklink(href='http://innovativedesign.club', target='_blank') Innovative Design &rarr;
-              |                              Since spring 2014, I&apos;ve been a design team leader, teaching assistant and officer at Innovative Design, Berkeley&apos;s premier graphic design and photography club.
+                | Intro to OCaml
+                br
+                a(href='http://youtu.be/FIQNbcx1r8s' target="_blank") YouTube 
+                | | 
+                a(href='submodules/intro-to-ocaml' target="_blank") Slides
+              | A 
+              a(href='http://localhackday.mlh.io/schedule.html' target="_blank") Local Hack Day 
+              | presentation streamed to 29 Universities
               br
               br
-              b Things I learned about
-              | : Branding, communication design, typography
+              b Learned
+              | : presenting to thousands of hackers
               br
-              b Tools I used
-              | : Illustrator, Photoshop
-          .pure-u-1.pure-u-md-1-2.pure-u-lg-1-2
-            .padding.raleway
-              a.worklink(href='http://www.baremagazine.org', target='_blank')
-                img.onefifty(src='icons/work/bare.svg')
-              .montserrat.withborder
-                a.worklink(href='http://www.baremagazine.org', target='_blank')
-                  | Bare Magazine &rarr;
-              |                              I served as a member of the layout team for the Spring 2014 and Fall 2014 issues of BARE, Berkeley&apos;s fashion and lifestyle magazine. I have also provided event marketing for the organization.
-              br
-              br
-              b Things I learned about
-              | : Editorial design
-              br
-              b Tools I used
-              | : Illustrator, InDesign
-      #workwaypoint
+              b Tools
+              | : reveal.js
+        // TODO links to cloud final project
+        // TODO links to tweet map
     #play
       .container
         .montserrat.header
-          | In my spare time, I like to paint, drink tea, and take apart clocks
+          | In my spare time I work on my motorcycle, play guitar, ski, and skateboard.
         .raleway.subheader.withborder
-          | I also like cooking, reading, writing, watching Bollywood movies, traveling, debating politics, and eating (especially eating). 
+          | I also enjoy reading non-fiction, Netflix'ng, being an armchair economist, and grabbing a pint or three with friends.
           br
           br
           b Currently reading
           | : 
-          i The Color Master
-          |  by Aimee Bender
+          i Gödel, Escher, Bach
+          |  by Douglas Hofstadter
           br
           b Currently watching
           | : 
-          i The Blacklist
-          | , season 1
+          i Parks & Recreation
+          | , Season 2
         // SOCIAL MEDIA
         .pure-g.narrow
-          .pure-u-1-5
+          .pure-u-1-4
             .halfpadding
-              a(href='https://www.pinterest.com/ashirahattia/', target='_blank')
-                img.pure-img(src='icons/socialmedia/pinterest.svg')
-          .pure-u-1-5
+              a.icon(href='https://twitter.com/jamisjohnson', target='_blank')
+                i.fa.fa-twitter.fa-5x.dark
+          .pure-u-1-4
             .halfpadding
-              a(href='https://instagram.com/ashirahattia', target='_blank')
-                img.pure-img(src='icons/socialmedia/instagram.svg')
-          .pure-u-1-5
+              a.icon(href='http://p01ym47h.tumblr.com/', target='_blank')
+                i.fa.fa-tumblr.fa-5x.dark
+          .pure-u-1-4
             .halfpadding
-              a(href='https://www.linkedin.com/in/ashirahatti', target='_blank')
-                img.pure-img(src='icons/socialmedia/linkedin.svg')
-          .pure-u-1-5
+              a.icon(href='http://instagram.com/_jamis_', target='_blank')
+                i.fa.fa-instagram.fa-5x.dark
+          .pure-u-1-4
             .halfpadding
-              a(href='http://ashirahattia.tumblr.com', target='_blank')
-                img.pure-img(src='icons/socialmedia/tumblr.svg')
-          .pure-u-1-5
-            .halfpadding
-              a(href='http://facebook.com/shirahattia', target='_blank')
-                img.pure-img(src='icons/socialmedia/facebook.svg')
+              a.icon(href='https://www.facebook.com/jamis.johnson', target='_blank')
+                i.fa.fa-facebook.fa-5x.dark
         // END SOCIAL MEDIA
-        .pure-g
-          .pure-u-1.pure-u-md-1-2.pure-u-lg-1-2
-            .padding.raleway
-              a.playlink(href='sculptures')
-                img.onefifty(src='icons/play/gear.svg')
-              .montserrat.withborder
-                a.playlink(href='sculptures') Sculptures &rarr;
-              |                             I wasn&apos;t kidding about taking apart clocks. I also like to put them back together in new ways. If you&apos;d like to commission a clock sculpture, shoot me an 
-              a.border(href='mailto:ashirahattia@gmail.com', target='_blank') email
-              | .
-              br
-              br
-              b Materials
-              | : Metal, screwdrivers, superglue
-          .pure-u-1.pure-u-md-1-2.pure-u-lg-1-2
-            .padding.raleway
-              a.playlink(href='sketchbook')
-                img.onefifty(src='icons/play/art.svg')
-              .montserrat.withborder
-                a.playlink(href='sketchbook') Sketchbook &rarr;
-              |                             I&apos;ve been drawing and painting since I was little. I work in both traditional and digital media, and I take my moleskine everywhere with me.
-              br
-              br
-              b Materials
-              | : Charcoal, Ink, Graphite, Watercolor, Acrylic Intuos Pro Tablet, Photoshop
-        .pure-g
-          .pure-u-1.pure-u-md-1-2.pure-u-lg-1-2
-            .padding.raleway
-              a.playlink(href='http://angiragoesplaces.tumblr.com', target='_blank')
-                img.onefifty(src='icons/play/pencil.svg')
-              .montserrat.withborder
-                a.playlink(href='http://angiragoesplaces.tumblr.com', target='_blank') Travel Journal &rarr;
-              |                             Right now, I&apos;m doing a semester abroad at Westminster University in London. You can check out my travel journal to read more about my adventures across the pond!
         footer
-          | (C) Angira Shirahatti, 2014
-          br
-          | Plugins used: FitText, Waypoint, Masonry, Magnific Popup and the Pure CSS grid
-          br
-          | All icons made by hand. Download the icon pack 
-          a(href='https://github.com/ashirahattia/website/tree/master/icons')  here
-          br
-          br
-          |                     Found a bug? 
-          a(href='mailto:ashirahattia@gmail.com') Call the exterminator
+          i.fa.fa-copyright.dark
+          |  Jamis Johnson, 2015

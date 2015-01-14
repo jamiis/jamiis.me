@@ -1,7 +1,12 @@
-@dark  : #2C3E50;
-@blue  : #6DBCDB;
-@red   : #FC4349;
-@light : #FFFFFF;
+@dark  : #261F27;
+@work  : #93C6A2;
+@play  : #FFE184;
+@light : #F5F4BE;
+
+.light { color: @light }
+.dark  { color: @dark }
+.work  { color: @work }
+.play  { color: @play }
 
 html, body {
     margin: 0;
@@ -12,8 +17,21 @@ html, body {
 }
 
 #navigation {
-    background-color: @dark;
-    color: @light;
+    &.landing {
+        background-color: @dark;
+        transition: linear 0.2s;
+        a { color: @light; }
+    }
+    &.work {
+        background-color: @work;
+        transition: linear 0.2s;
+        a { color: @light; }
+    }
+    &.play {
+        background-color: @play;
+        transition: linear 0.2s;
+        a { color: @dark; }
+    }
     position: fixed;
     width: 100%;
     text-align: right;
@@ -36,12 +54,13 @@ html, body {
 }
 
 #work {
-    background-color: @blue;
+    background-color: @work;
     color: @light;
 }
 
 #play {
-    background-color: @red;
+    .container { padding-bottom: 10px; }
+    background-color: @play;
     color: @dark;
 }
 
@@ -151,60 +170,44 @@ html, body {
 footer {
     font-family: "Raleway";
     font-size: 9pt;
-    margin: 80px;
-    margin-bottom: 0px;
-    padding: 30px;
+    margin: 15px 50px;
+    padding-top: 25px;
+    padding-bottom: 15px;
     border-top: 1px solid;
-    height: 50px;
 }
 
 /* links */
 
-a:LINK, a:VISITED {
+a {
     text-decoration: none;
     color: @light;
     font-weight: 700;
-}
 
-a:HOVER {
-    opacity: 0.8;
-    transition: linear 0.3s;;
-    border: none;
-}
-
-a.border:HOVER {
-    opacity: 1;
-    transition: none;
-    border-bottom: 2px solid;
-}
-
-a.workbutton:LINK, a.workbutton:VISITED {
-    color: #F5F4BE;
-    padding: 30px;
-    border: 3px #F5F4BE solid;
-}
-
-a.workbutton:HOVER {
-    opacity: 1;
-    background-color: #F5F4BE;
-    color: #93C6A2;
-}
-
-a.worklink:LINK, a.worklink:VISITED {
-    color: #F5F4BE;
-}
-
-a.playlink:LINK, a.playlink:VISITED {
-    color: #3E5167;
+    &:HOVER {
+        cursor: pointer;
+        border-bottom: 2px solid;
+    }
+    &.icon:HOVER {
+        border: none;
+    }
+    &.workbutton {
+        padding: 30px;
+        border: 3px @light solid;
+        &:HOVER {
+            opacity: 1;
+            background-color: @light;
+            color: @work;
+            transition: linear 0.3s;
+            border: none;
+        }
+    }
 }
 
 /* Media queries for responsive design */
 
 @media (max-width: 800px) {
     a.workbutton:LINK, a.workbutton:VISITED {
-        color: #F5F4BE;
         padding: 20px;
-        border: 3px #F5F4BE solid;
         font-size: 12pt;
     }
 
@@ -223,14 +226,14 @@ a.playlink:LINK, a.playlink:VISITED {
 
 @media (max-width: 600px) {
     a.workbutton:LINK, a.workbutton:VISITED {
-        color: #F5F4BE;
+        color: @light;
         padding: 12px;
-        border: 2px #F5F4BE solid;
+        border: 2px @light solid;
         font-size: 8pt;
     }
 
     a.workbutton:HOVER {
-      color: #93C6A2;
+      color: @work;
     }
 
     #intro {

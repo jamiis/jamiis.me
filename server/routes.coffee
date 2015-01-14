@@ -31,6 +31,7 @@ module.exports = (app) ->
   app.use "/js",    staticPath "/js"
   app.use "/img",   staticPath "/img"
   app.use "/icons", staticPath "/icons"
+  app.use "/submodules", staticPath "/submodules"
 
   # all undefined asset or api routes should return a 404
   app.route("/:url(api|auth|components|app|bower_components|assets)/*").get errors[404]

@@ -7,6 +7,7 @@
     "test": "test",
     "dev": "NODE_ENV=dev node server/app.js",
     "debug": "NODE_ENV=dev node debug server/app.js",
+    "css": "lessc client/app/styles/main.less > client/app/styles/main.css",
     "build": "BROWSERIFYSHIM_DIAGNOSTICS=1 browserify --debug client/app/js/main.coffee --output client/app/js/bundle.js",
     "watch": "watchify client/app/js/main.coffee -o client/app/js/bundle.js --debug --verbose"
   },

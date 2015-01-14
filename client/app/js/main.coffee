@@ -7,16 +7,10 @@ domready ->
   require "jquery-fittext"
   
   #TODO de-duplicate. get these vars directly from less file.
-  dark = "#2C3E50"
-  blue = "#6DBCDB"
-  red = "#FC4349"
-  light = "#FFFFFF"
-  navCSS = (bg, font) ->
-    css = transition: "linear 0.2s"
-    css["background-color"] = bg  if bg
-    css["color"] = font  if font
-    $("#navigation").css css
-    return
+  light = '#F5F4BE'
+  dark = '#261F27'
+  work = '#93C6A2'
+  play = '#FFE184'
 
   $("#intro").animate
     "padding-left": "50px"
@@ -27,18 +21,41 @@ domready ->
 
   $("#navigation").delay(1500).fadeIn 1000
 
+
+  # setup click events for navigation buttons
+
+  scrollOnClick = (section) ->
+    $("#navigation a."+section+"-nav").click ->
+      $("html,body").animate
+        scrollTop: $("#"+section).offset().top
+      , 'slow'
+      return
+  scrollOnClick("work")
+  scrollOnClick("play")
+
+
+  # adjust navigation styling depending on position
+
   $("#work").waypoint (direction) ->
     if direction is "down"
-      navCSS blue, null
-    else navCSS dark, null  if direction is "up"
-    return
+      $ "#navigation"
+        .removeClass "landing play"
+        .addClass "work"
+    else
+      $ "#navigation"
+        .removeClass "work play"
+        .addClass "landing"
   , offset: "30"
 
   $("#play").waypoint (direction) ->
     if direction is "down"
-      navCSS red, null
-    else navCSS blue, null  if direction is "up"
-    return
+      $ "#navigation"
+        .removeClass "landing work"
+        .addClass "play"
+    else
+      $ "#navigation"
+        .removeClass "play landing"
+        .addClass "work"
   , offset: "30"
 
   return
