@@ -1,0 +1,3 @@
+[submodule "client/app/submodules/intro-to-ocaml"]
+	path = client/app/submodules/intro-to-ocaml
+	url = https://github.com/jamiis/intro-to-ocaml
