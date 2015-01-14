@@ -10,6 +10,7 @@ cd jamiis.me
 npm install
 brew install coffee
 coffee --compile server/ client/
+npm run css
 npm run dev
 ```
 
