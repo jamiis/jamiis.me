@@ -13,5 +13,9 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "jquery-waypoints": "~3.0.1",
+    "FitText.js": "~1.2.0"
+  }
 }
