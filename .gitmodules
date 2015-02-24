@@ -1,3 +1,6 @@
-[submodule "client/app/submodules/intro-to-ocaml"]
-	path = client/app/submodules/intro-to-ocaml
+[submodule "intro-to-ocaml"]
+	path = submodules/intro-to-ocaml
 	url = https://github.com/jamiis/intro-to-ocaml
+[submodule "presentation-convolutional-neural-nets"]
+	path = submodules/presentation-convolutional-neural-nets
+	url = git@github.com:jamiis/presentation-convolutional-neural-nets.git
