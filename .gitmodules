@@ -4,3 +4,6 @@
 [submodule "presentation-convolutional-neural-nets"]
 	path = submodules/presentation-convolutional-neural-nets
 	url = git@github.com:jamiis/presentation-convolutional-neural-nets.git
+[submodule "repommender-presentation"]
+	path = submodules/repommender-presentation
+	url = https://github.com/jamiis/repommender-presentation
