@@ -7,3 +7,6 @@
 [submodule "repommender-presentation"]
 	path = submodules/repommender-presentation
 	url = https://github.com/jamiis/repommender-presentation
+[submodule "q-deep-eye-presentation"]
+	path = submodules/q-deep-eye-presentation
+	url = git@github.com:jamiis/q-deep-eye-presentation.git
