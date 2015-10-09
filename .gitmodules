@@ -10,3 +10,6 @@
 [submodule "q-deep-eye-presentation"]
 	path = submodules/q-deep-eye-presentation
 	url = git@github.com:jamiis/q-deep-eye-presentation.git
+[submodule "intro-to-machine-learning"]
+	path = submodules/intro-to-machine-learning
+	url = git@github.com:jamiis/intro-to-machine-learning.git
