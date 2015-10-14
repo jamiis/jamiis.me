@@ -13,7 +13,6 @@ domready ->
   play = '#FFE184'
 
   $("#intro").animate
-    "padding-left": "50px"
     opacity: "show"
   , 1500
 
